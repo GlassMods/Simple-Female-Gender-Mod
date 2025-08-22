@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sfgm",
+  "name": "Simple Female Gender",
+  "description": "A simple mod that adds boobs to your minecraft character",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [""],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

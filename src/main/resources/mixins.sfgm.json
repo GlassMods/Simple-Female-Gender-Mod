@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "lmao.glassmods.sfgm.m",
+  "refmap": "mixins.sfgm.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinModelPlayer"
+  ]
+}
