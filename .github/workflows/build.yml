@@ -28,3 +28,4 @@ jobs:
       with:
           name: Simple-Female-Gender
           path: build/libs/sfgm-1.0.jar
+          merge-multiple: false
