@@ -27,7 +27,7 @@ public class MixinModelPlayer extends ModelBase {
 
     }
 
-    @Inject(method = "render", at = @At("RETURN"))
+    @Inject(method = "render", at = @At("HEAD"))
     public void renderBreastBoxOnPlayer(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scale, CallbackInfo c) {
 
         if (entity != Minecraft.getMinecraft().thePlayer) return;
@@ -35,11 +35,11 @@ public class MixinModelPlayer extends ModelBase {
         GlStateManager.pushMatrix();
 
         if (entity.isSneaking()) {
-            GlStateManager.translate(0F, 0.3F, 0.1F);
-            sfgm$breastBox.rotateAngleX = (float)Math.toRadians(80F);
+            GlStateManager.translate(0F, 0.3F, 0.13F);
+            sfgm$breastBox.rotateAngleX = (float)Math.toRadians(75F);
         } else {
-            GlStateManager.translate(0F, 0.1F, 0.02F);
-            sfgm$breastBox.rotateAngleX = (float)Math.toRadians(45F);
+            GlStateManager.translate(0F, 0.05F, 0.06F);
+            sfgm$breastBox.rotateAngleX = (float)Math.toRadians(65F);
         }
 
         sfgm$breastBox.render(scale);
